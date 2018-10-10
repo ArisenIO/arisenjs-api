@@ -1,7 +1,7 @@
 ## Objects
 
 <dl>
-<dt><a href="#eos">eos</a> : <code>object</code></dt>
+<dt><a href="#rsn">rsn</a> : <code>object</code></dt>
 <dd></dd>
 </dl>
 
@@ -46,61 +46,61 @@
 <dd></dd>
 </dl>
 
-<a name="eos"></a>
+<a name="rsn"></a>
 
-## eos : <code>object</code>
+## rsn : <code>object</code>
 **Kind**: global namespace  
 
-* [eos](#eos) : <code>object</code>
-    * [.getInfo()](#eos.getInfo) ⇒ <code>string</code>
-    * [.getAccount(account_name)](#eos.getAccount) ⇒ <code>string</code>
-    * [.getCode(account_name, [code_as_wasm])](#eos.getCode) ⇒ [<code>getCodeResult</code>](#getCodeResult)
-    * [.getCodeHash(account_name)](#eos.getCodeHash) ⇒ [<code>getCodeHashResult</code>](#getCodeHashResult)
-    * [.getAbi(account_name)](#eos.getAbi) ⇒ [<code>getAbiResult</code>](#getAbiResult)
-    * [.getRawCodeAndAbi(account_name)](#eos.getRawCodeAndAbi) ⇒ [<code>getRawCodeAndAbiResult</code>](#getRawCodeAndAbiResult)
-    * [.abiJsonToBin(code, action, args)](#eos.abiJsonToBin) ⇒ [<code>abiJsonToBinResult</code>](#abiJsonToBinResult)
-    * [.abiBinToJson(code, action, binargs)](#eos.abiBinToJson) ⇒ [<code>abiBinToJsonResult</code>](#abiBinToJsonResult)
-    * [.getRequiredKeys(transaction, available_keys)](#eos.getRequiredKeys) ⇒ <code>Set.&lt;public_key&gt;</code>
-    * [.getBlock(block_num_or_id)](#eos.getBlock) ⇒ <code>variant</code>
-    * [.getBlockHeaderState(block_num_or_id)](#eos.getBlockHeaderState) ⇒ <code>string</code>
-    * [.getTableRows([json], code, scope, table, table_key, [lower_bound], [upper_bound], [limit], key_type, index_position)](#eos.getTableRows) ⇒ [<code>getTableRowsResult</code>](#getTableRowsResult)
-    * [.getCurrencyBalance(code, account, symbol)](#eos.getCurrencyBalance) ⇒ <code>Array.&lt;asset&gt;</code>
-    * [.getCurrencyStats(code, symbol)](#eos.getCurrencyStats) ⇒ [<code>getCurrencyStatsResult</code>](#getCurrencyStatsResult)
-    * [.getProducers([json], lower_bound, [limit])](#eos.getProducers) ⇒ [<code>getProducersResult</code>](#getProducersResult)
-    * [.getProducerSchedule()](#eos.getProducerSchedule) ⇒ [<code>getProducerScheduleResult</code>](#getProducerScheduleResult)
-    * [.getScheduledTransactions([json], lower_bound, [limit])](#eos.getScheduledTransactions) ⇒ [<code>getScheduledTransactionsResult</code>](#getScheduledTransactionsResult)
-    * [.pushBlock(block)](#eos.pushBlock)
-    * [.pushTransaction(signed_transaction)](#eos.pushTransaction) ⇒ [<code>pushTransactionResult</code>](#pushTransactionResult)
-    * [.pushTransactions(signed_transaction)](#eos.pushTransactions) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
-    * [.getActions(account_name, [pos], [offset])](#eos.getActions) ⇒ [<code>getActionsResult</code>](#getActionsResult)
-    * [.getTransaction(id, [block_num_hint])](#eos.getTransaction) ⇒ [<code>getTransactionResult</code>](#getTransactionResult)
-    * [.getKeyAccounts(public_key)](#eos.getKeyAccounts) ⇒ [<code>getKeyAccountsResult</code>](#getKeyAccountsResult)
-    * [.getControlledAccounts(controlling_account)](#eos.getControlledAccounts) ⇒ [<code>getControlledAccountsResult</code>](#getControlledAccountsResult)
+* [rsn](#rsn) : <code>object</code>
+    * [.getInfo()](#rsn.getInfo) ⇒ <code>string</code>
+    * [.getAccount(account_name)](#rsn.getAccount) ⇒ <code>string</code>
+    * [.getCode(account_name, [code_as_wasm])](#rsn.getCode) ⇒ [<code>getCodeResult</code>](#getCodeResult)
+    * [.getCodeHash(account_name)](#rsn.getCodeHash) ⇒ [<code>getCodeHashResult</code>](#getCodeHashResult)
+    * [.getAbi(account_name)](#rsn.getAbi) ⇒ [<code>getAbiResult</code>](#getAbiResult)
+    * [.getRawCodeAndAbi(account_name)](#rsn.getRawCodeAndAbi) ⇒ [<code>getRawCodeAndAbiResult</code>](#getRawCodeAndAbiResult)
+    * [.abiJsonToBin(code, action, args)](#rsn.abiJsonToBin) ⇒ [<code>abiJsonToBinResult</code>](#abiJsonToBinResult)
+    * [.abiBinToJson(code, action, binargs)](#rsn.abiBinToJson) ⇒ [<code>abiBinToJsonResult</code>](#abiBinToJsonResult)
+    * [.getRequiredKeys(transaction, available_keys)](#rsn.getRequiredKeys) ⇒ <code>Set.&lt;public_key&gt;</code>
+    * [.getBlock(block_num_or_id)](#rsn.getBlock) ⇒ <code>variant</code>
+    * [.getBlockHeaderState(block_num_or_id)](#rsn.getBlockHeaderState) ⇒ <code>string</code>
+    * [.getTableRows([json], code, scope, table, table_key, [lower_bound], [upper_bound], [limit], key_type, index_position)](#rsn.getTableRows) ⇒ [<code>getTableRowsResult</code>](#getTableRowsResult)
+    * [.getCurrencyBalance(code, account, symbol)](#rsn.getCurrencyBalance) ⇒ <code>Array.&lt;asset&gt;</code>
+    * [.getCurrencyStats(code, symbol)](#rsn.getCurrencyStats) ⇒ [<code>getCurrencyStatsResult</code>](#getCurrencyStatsResult)
+    * [.getProducers([json], lower_bound, [limit])](#rsn.getProducers) ⇒ [<code>getProducersResult</code>](#getProducersResult)
+    * [.getProducerSchedule()](#rsn.getProducerSchedule) ⇒ [<code>getProducerScheduleResult</code>](#getProducerScheduleResult)
+    * [.getScheduledTransactions([json], lower_bound, [limit])](#rsn.getScheduledTransactions) ⇒ [<code>getScheduledTransactionsResult</code>](#getScheduledTransactionsResult)
+    * [.pushBlock(block)](#rsn.pushBlock)
+    * [.pushTransaction(signed_transaction)](#rsn.pushTransaction) ⇒ [<code>pushTransactionResult</code>](#pushTransactionResult)
+    * [.pushTransactions(signed_transaction)](#rsn.pushTransactions) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
+    * [.getActions(account_name, [pos], [offset])](#rsn.getActions) ⇒ [<code>getActionsResult</code>](#getActionsResult)
+    * [.getTransaction(id, [block_num_hint])](#rsn.getTransaction) ⇒ [<code>getTransactionResult</code>](#getTransactionResult)
+    * [.getKeyAccounts(public_key)](#rsn.getKeyAccounts) ⇒ [<code>getKeyAccountsResult</code>](#getKeyAccountsResult)
+    * [.getControlledAccounts(controlling_account)](#rsn.getControlledAccounts) ⇒ [<code>getControlledAccountsResult</code>](#getControlledAccountsResult)
 
-<a name="eos.getInfo"></a>
+<a name="rsn.getInfo"></a>
 
-### eos.getInfo() ⇒ <code>string</code>
+### rsn.getInfo() ⇒ <code>string</code>
 Return general network information.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 **Example**  
 ```js
 url_path: `/v1/chain/get_info`
 ```
 **Example**  
 ```js
-eos.getInfo({})
+rsn.getInfo({})
 ```
-<a name="eos.getAccount"></a>
+<a name="rsn.getAccount"></a>
 
-### eos.getAccount(account_name) ⇒ <code>string</code>
+### rsn.getAccount(account_name) ⇒ <code>string</code>
 Fetch a blockchain account
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
+| account_name | <code>name</code> |
 
 **Example**  
 ```js
@@ -108,19 +108,19 @@ url_path: `/v1/chain/get_account`
 ```
 **Example**  
 ```js
-eos.getAccount(account_name)
+rsn.getAccount(account_name)
 ```
-<a name="eos.getCode"></a>
+<a name="rsn.getCode"></a>
 
-### eos.getCode(account_name, [code_as_wasm]) ⇒ [<code>getCodeResult</code>](#getCodeResult)
+### rsn.getCode(account_name, [code_as_wasm]) ⇒ [<code>getCodeResult</code>](#getCodeResult)
 Fetch smart contract code
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Default |
 | --- | --- | --- |
-| account_name | <code>name</code> |  | 
-| [code_as_wasm] | <code>bool</code> | <code>false</code> | 
+| account_name | <code>name</code> |  |
+| [code_as_wasm] | <code>bool</code> | <code>false</code> |
 
 **Example**  
 ```js
@@ -128,16 +128,16 @@ url_path: `/v1/chain/get_code`
 ```
 **Example**  
 ```js
-eos.getCode(account_name, code_as_wasm)
+rsn.getCode(account_name, code_as_wasm)
 ```
-<a name="eos.getCodeHash"></a>
+<a name="rsn.getCodeHash"></a>
 
-### eos.getCodeHash(account_name) ⇒ [<code>getCodeHashResult</code>](#getCodeHashResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getCodeHash(account_name) ⇒ [<code>getCodeHashResult</code>](#getCodeHashResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
+| account_name | <code>name</code> |
 
 **Example**  
 ```js
@@ -145,16 +145,16 @@ url_path: `/v1/chain/get_code_hash`
 ```
 **Example**  
 ```js
-eos.getCodeHash(account_name)
+rsn.getCodeHash(account_name)
 ```
-<a name="eos.getAbi"></a>
+<a name="rsn.getAbi"></a>
 
-### eos.getAbi(account_name) ⇒ [<code>getAbiResult</code>](#getAbiResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getAbi(account_name) ⇒ [<code>getAbiResult</code>](#getAbiResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
+| account_name | <code>name</code> |
 
 **Example**  
 ```js
@@ -162,16 +162,16 @@ url_path: `/v1/chain/get_abi`
 ```
 **Example**  
 ```js
-eos.getAbi(account_name)
+rsn.getAbi(account_name)
 ```
-<a name="eos.getRawCodeAndAbi"></a>
+<a name="rsn.getRawCodeAndAbi"></a>
 
-### eos.getRawCodeAndAbi(account_name) ⇒ [<code>getRawCodeAndAbiResult</code>](#getRawCodeAndAbiResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getRawCodeAndAbi(account_name) ⇒ [<code>getRawCodeAndAbiResult</code>](#getRawCodeAndAbiResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
+| account_name | <code>name</code> |
 
 **Example**  
 ```js
@@ -179,20 +179,20 @@ url_path: `/v1/chain/get_raw_code_and_abi`
 ```
 **Example**  
 ```js
-eos.getRawCodeAndAbi(account_name)
+rsn.getRawCodeAndAbi(account_name)
 ```
-<a name="eos.abiJsonToBin"></a>
+<a name="rsn.abiJsonToBin"></a>
 
-### eos.abiJsonToBin(code, action, args) ⇒ [<code>abiJsonToBinResult</code>](#abiJsonToBinResult)
+### rsn.abiJsonToBin(code, action, args) ⇒ [<code>abiJsonToBinResult</code>](#abiJsonToBinResult)
 Manually serialize json into binary hex.  The binayargs is usually stored in Action.data.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> | 
-| action | <code>name</code> | 
-| args | [<code>bytes</code>](#bytes) | 
+| code | <code>name</code> |
+| action | <code>name</code> |
+| args | [<code>bytes</code>](#bytes) |
 
 **Example**  
 ```js
@@ -200,20 +200,20 @@ url_path: `/v1/chain/abi_json_to_bin`
 ```
 **Example**  
 ```js
-eos.abiJsonToBin(code, action, args)
+rsn.abiJsonToBin(code, action, args)
 ```
-<a name="eos.abiBinToJson"></a>
+<a name="rsn.abiBinToJson"></a>
 
-### eos.abiBinToJson(code, action, binargs) ⇒ [<code>abiBinToJsonResult</code>](#abiBinToJsonResult)
+### rsn.abiBinToJson(code, action, binargs) ⇒ [<code>abiBinToJsonResult</code>](#abiBinToJsonResult)
 Convert bin hex back into Abi json definition.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> | 
-| action | <code>name</code> | 
-| binargs | [<code>bytes</code>](#bytes) | 
+| code | <code>name</code> |
+| action | <code>name</code> |
+| binargs | [<code>bytes</code>](#bytes) |
 
 **Example**  
 ```js
@@ -221,17 +221,17 @@ url_path: `/v1/chain/abi_bin_to_json`
 ```
 **Example**  
 ```js
-eos.abiBinToJson(code, action, binargs)
+rsn.abiBinToJson(code, action, binargs)
 ```
-<a name="eos.getRequiredKeys"></a>
+<a name="rsn.getRequiredKeys"></a>
 
-### eos.getRequiredKeys(transaction, available_keys) ⇒ <code>Set.&lt;public_key&gt;</code>
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getRequiredKeys(transaction, available_keys) ⇒ <code>Set.&lt;public_key&gt;</code>
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| transaction | <code>transaction</code> | 
-| available_keys | <code>set.&lt;public_key&gt;</code> | 
+| transaction | <code>transaction</code> |
+| available_keys | <code>set.&lt;public_key&gt;</code> |
 
 **Example**  
 ```js
@@ -239,18 +239,18 @@ url_path: `/v1/chain/get_required_keys`
 ```
 **Example**  
 ```js
-eos.getRequiredKeys(transaction, available_keys)
+rsn.getRequiredKeys(transaction, available_keys)
 ```
-<a name="eos.getBlock"></a>
+<a name="rsn.getBlock"></a>
 
-### eos.getBlock(block_num_or_id) ⇒ <code>variant</code>
+### rsn.getBlock(block_num_or_id) ⇒ <code>variant</code>
 Fetch a block from the blockchain.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| block_num_or_id | <code>string</code> | 
+| block_num_or_id | <code>string</code> |
 
 **Example**  
 ```js
@@ -258,18 +258,18 @@ url_path: `/v1/chain/get_block`
 ```
 **Example**  
 ```js
-eos.getBlock(block_num_or_id)
+rsn.getBlock(block_num_or_id)
 ```
-<a name="eos.getBlockHeaderState"></a>
+<a name="rsn.getBlockHeaderState"></a>
 
-### eos.getBlockHeaderState(block_num_or_id) ⇒ <code>string</code>
+### rsn.getBlockHeaderState(block_num_or_id) ⇒ <code>string</code>
 Fetch the minimum state necessary to validate transaction headers.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| block_num_or_id | <code>string</code> | 
+| block_num_or_id | <code>string</code> |
 
 **Example**  
 ```js
@@ -277,14 +277,14 @@ url_path: `/v1/chain/get_block_header_state`
 ```
 **Example**  
 ```js
-eos.getBlockHeaderState(block_num_or_id)
+rsn.getBlockHeaderState(block_num_or_id)
 ```
-<a name="eos.getTableRows"></a>
+<a name="rsn.getTableRows"></a>
 
-### eos.getTableRows([json], code, scope, table, table_key, [lower_bound], [upper_bound], [limit], key_type, index_position) ⇒ [<code>getTableRowsResult</code>](#getTableRowsResult)
+### rsn.getTableRows([json], code, scope, table, table_key, [lower_bound], [upper_bound], [limit], key_type, index_position) ⇒ [<code>getTableRowsResult</code>](#getTableRowsResult)
 Fetch smart contract data from an account.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -305,18 +305,18 @@ url_path: `/v1/chain/get_table_rows`
 ```
 **Example**  
 ```js
-eos.getTableRows(json, code, scope, table, table_key, lower_bound, upper_bound, limit, key_type, index_position)
+rsn.getTableRows(json, code, scope, table, table_key, lower_bound, upper_bound, limit, key_type, index_position)
 ```
-<a name="eos.getCurrencyBalance"></a>
+<a name="rsn.getCurrencyBalance"></a>
 
-### eos.getCurrencyBalance(code, account, symbol) ⇒ <code>Array.&lt;asset&gt;</code>
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getCurrencyBalance(code, account, symbol) ⇒ <code>Array.&lt;asset&gt;</code>
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> | 
-| account | <code>name</code> | 
-| symbol | <code>optional.&lt;string&gt;</code> | 
+| code | <code>name</code> |
+| account | <code>name</code> |
+| symbol | <code>optional.&lt;string&gt;</code> |
 
 **Example**  
 ```js
@@ -324,17 +324,17 @@ url_path: `/v1/chain/get_currency_balance`
 ```
 **Example**  
 ```js
-eos.getCurrencyBalance(code, account, symbol)
+rsn.getCurrencyBalance(code, account, symbol)
 ```
-<a name="eos.getCurrencyStats"></a>
+<a name="rsn.getCurrencyStats"></a>
 
-### eos.getCurrencyStats(code, symbol) ⇒ [<code>getCurrencyStatsResult</code>](#getCurrencyStatsResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getCurrencyStats(code, symbol) ⇒ [<code>getCurrencyStatsResult</code>](#getCurrencyStatsResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> | 
-| symbol | <code>string</code> | 
+| code | <code>name</code> |
+| symbol | <code>string</code> |
 
 **Example**  
 ```js
@@ -342,20 +342,20 @@ url_path: `/v1/chain/get_currency_stats`
 ```
 **Example**  
 ```js
-eos.getCurrencyStats(code, symbol)
+rsn.getCurrencyStats(code, symbol)
 ```
-<a name="eos.getProducers"></a>
+<a name="rsn.getProducers"></a>
 
-### eos.getProducers([json], lower_bound, [limit]) ⇒ [<code>getProducersResult</code>](#getProducersResult)
+### rsn.getProducers([json], lower_bound, [limit]) ⇒ [<code>getProducersResult</code>](#getProducersResult)
 Fetch smart contract data from producer.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [json] | <code>bool</code> | <code>false</code> | 
-| lower_bound | <code>string</code> |  | 
-| [limit] | <code>uint32</code> | <code>50</code> | 
+| [json] | <code>bool</code> | <code>false</code> |
+| lower_bound | <code>string</code> |  |
+| [limit] | <code>uint32</code> | <code>50</code> |
 
 **Example**  
 ```js
@@ -363,24 +363,24 @@ url_path: `/v1/chain/get_producers`
 ```
 **Example**  
 ```js
-eos.getProducers(json, lower_bound, limit)
+rsn.getProducers(json, lower_bound, limit)
 ```
-<a name="eos.getProducerSchedule"></a>
+<a name="rsn.getProducerSchedule"></a>
 
-### eos.getProducerSchedule() ⇒ [<code>getProducerScheduleResult</code>](#getProducerScheduleResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getProducerSchedule() ⇒ [<code>getProducerScheduleResult</code>](#getProducerScheduleResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 **Example**  
 ```js
 url_path: `/v1/chain/get_producer_schedule`
 ```
 **Example**  
 ```js
-eos.getProducerSchedule()
+rsn.getProducerSchedule()
 ```
-<a name="eos.getScheduledTransactions"></a>
+<a name="rsn.getScheduledTransactions"></a>
 
-### eos.getScheduledTransactions([json], lower_bound, [limit]) ⇒ [<code>getScheduledTransactionsResult</code>](#getScheduledTransactionsResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getScheduledTransactions([json], lower_bound, [limit]) ⇒ [<code>getScheduledTransactionsResult</code>](#getScheduledTransactionsResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -394,18 +394,18 @@ url_path: `/v1/chain/get_scheduled_transactions`
 ```
 **Example**  
 ```js
-eos.getScheduledTransactions(json, lower_bound, limit)
+rsn.getScheduledTransactions(json, lower_bound, limit)
 ```
-<a name="eos.pushBlock"></a>
+<a name="rsn.pushBlock"></a>
 
-### eos.pushBlock(block)
+### rsn.pushBlock(block)
 Append a block to the chain database.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| block | <code>signed_block</code> | 
+| block | <code>signed_block</code> |
 
 **Example**  
 ```js
@@ -413,18 +413,18 @@ url_path: `/v1/chain/push_block`
 ```
 **Example**  
 ```js
-eos.pushBlock(block)
+rsn.pushBlock(block)
 ```
-<a name="eos.pushTransaction"></a>
+<a name="rsn.pushTransaction"></a>
 
-### eos.pushTransaction(signed_transaction) ⇒ [<code>pushTransactionResult</code>](#pushTransactionResult)
+### rsn.pushTransaction(signed_transaction) ⇒ [<code>pushTransactionResult</code>](#pushTransactionResult)
 Attempts to push the transaction into the pending queue.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| signed_transaction | <code>signed_transaction</code> | 
+| signed_transaction | <code>signed_transaction</code> |
 
 **Example**  
 ```js
@@ -432,18 +432,18 @@ url_path: `/v1/chain/push_transaction`
 ```
 **Example**  
 ```js
-eos.pushTransaction(signed_transaction)
+rsn.pushTransaction(signed_transaction)
 ```
-<a name="eos.pushTransactions"></a>
+<a name="rsn.pushTransactions"></a>
 
-### eos.pushTransactions(signed_transaction) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
+### rsn.pushTransactions(signed_transaction) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
 Attempts to push transactions into the pending queue.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| signed_transaction | <code>signed_transaction</code> | 
+| signed_transaction | <code>signed_transaction</code> |
 
 **Example**  
 ```js
@@ -451,12 +451,12 @@ url_path: `/v1/chain/push_transactions`
 ```
 **Example**  
 ```js
-eos.pushTransactions(signed_transaction)
+rsn.pushTransactions(signed_transaction)
 ```
-<a name="eos.getActions"></a>
+<a name="rsn.getActions"></a>
 
-### eos.getActions(account_name, [pos], [offset]) ⇒ [<code>getActionsResult</code>](#getActionsResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getActions(account_name, [pos], [offset]) ⇒ [<code>getActionsResult</code>](#getActionsResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -470,14 +470,14 @@ url_path: `/v1/history/get_actions`
 ```
 **Example**  
 ```js
-eos.getActions(account_name, pos, offset)
+rsn.getActions(account_name, pos, offset)
 ```
-<a name="eos.getTransaction"></a>
+<a name="rsn.getTransaction"></a>
 
-### eos.getTransaction(id, [block_num_hint]) ⇒ [<code>getTransactionResult</code>](#getTransactionResult)
+### rsn.getTransaction(id, [block_num_hint]) ⇒ [<code>getTransactionResult</code>](#getTransactionResult)
 Retrieve a transaction from the blockchain.
 
-**Kind**: static method of [<code>eos</code>](#eos)  
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -490,16 +490,16 @@ url_path: `/v1/history/get_transaction`
 ```
 **Example**  
 ```js
-eos.getTransaction(id, block_num_hint)
+rsn.getTransaction(id, block_num_hint)
 ```
-<a name="eos.getKeyAccounts"></a>
+<a name="rsn.getKeyAccounts"></a>
 
-### eos.getKeyAccounts(public_key) ⇒ [<code>getKeyAccountsResult</code>](#getKeyAccountsResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getKeyAccounts(public_key) ⇒ [<code>getKeyAccountsResult</code>](#getKeyAccountsResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| public_key | <code>public_key_type</code> | 
+| public_key | <code>public_key_type</code> |
 
 **Example**  
 ```js
@@ -507,16 +507,16 @@ url_path: `/v1/history/get_key_accounts`
 ```
 **Example**  
 ```js
-eos.getKeyAccounts(public_key)
+rsn.getKeyAccounts(public_key)
 ```
-<a name="eos.getControlledAccounts"></a>
+<a name="rsn.getControlledAccounts"></a>
 
-### eos.getControlledAccounts(controlling_account) ⇒ [<code>getControlledAccountsResult</code>](#getControlledAccountsResult)
-**Kind**: static method of [<code>eos</code>](#eos)  
+### rsn.getControlledAccounts(controlling_account) ⇒ [<code>getControlledAccountsResult</code>](#getControlledAccountsResult)
+**Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| controlling_account | <code>account_name</code> | 
+| controlling_account | <code>account_name</code> |
 
 **Example**  
 ```js
@@ -524,7 +524,7 @@ url_path: `/v1/history/get_controlled_accounts`
 ```
 **Example**  
 ```js
-eos.getControlledAccounts(controlling_account)
+rsn.getControlledAccounts(controlling_account)
 ```
 <a name="bytes"></a>
 
@@ -538,11 +538,11 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
-| wast | <code>string</code> | 
-| wasm | <code>string</code> | 
-| code_hash | <code>sha256</code> | 
-| abi | <code>optional.&lt;abi_def&gt;</code> | 
+| account_name | <code>name</code> |
+| wast | <code>string</code> |
+| wasm | <code>string</code> |
+| code_hash | <code>sha256</code> |
+| abi | <code>optional.&lt;abi_def&gt;</code> |
 
 <a name="getCodeHashResult"></a>
 
@@ -552,8 +552,8 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
-| code_hash | <code>sha256</code> | 
+| account_name | <code>name</code> |
+| code_hash | <code>sha256</code> |
 
 <a name="getAbiResult"></a>
 
@@ -563,8 +563,8 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
-| [abi] | <code>abi_def</code> | 
+| account_name | <code>name</code> |
+| [abi] | <code>abi_def</code> |
 
 <a name="getRawCodeAndAbiResult"></a>
 
@@ -574,9 +574,9 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> | 
-| wasm | [<code>bytes</code>](#bytes) | 
-| [abi] | <code>abi_def</code> | 
+| account_name | <code>name</code> |
+| wasm | [<code>bytes</code>](#bytes) |
+| [abi] | <code>abi_def</code> |
 
 <a name="abiJsonToBinResult"></a>
 
@@ -586,7 +586,7 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| binargs | [<code>bytes</code>](#bytes) | 
+| binargs | [<code>bytes</code>](#bytes) |
 
 <a name="abiBinToJsonResult"></a>
 
@@ -596,7 +596,7 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| args | [<code>bytes</code>](#bytes) | 
+| args | [<code>bytes</code>](#bytes) |
 
 <a name="getTableRowsResult"></a>
 
@@ -617,9 +617,9 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| supply | <code>asset</code> | 
-| max_supply | <code>asset</code> | 
-| issuer | <code>account_name</code> | 
+| supply | <code>asset</code> |
+| max_supply | <code>asset</code> |
+| issuer | <code>account_name</code> |
 
 <a name="getProducersResult"></a>
 
@@ -641,7 +641,7 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| vector | <code>proposed</code> | 
+| vector | <code>proposed</code> |
 
 <a name="getScheduledTransactionsResult"></a>
 
@@ -666,8 +666,8 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| transaction_id | <code>fixed_bytes32</code> | 
-| processed | [<code>bytes</code>](#bytes) | 
+| transaction_id | <code>fixed_bytes32</code> |
+| processed | [<code>bytes</code>](#bytes) |
 
 <a name="getActionsResult"></a>
 
@@ -677,9 +677,9 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| actions | <code>Array.&lt;ordered_action_result&gt;</code> | 
-| last_irreversible_block | <code>uint32</code> | 
-| [time_limit_exceeded_error] | <code>bool</code> | 
+| actions | <code>Array.&lt;ordered_action_result&gt;</code> |
+| last_irreversible_block | <code>uint32</code> |
+| [time_limit_exceeded_error] | <code>bool</code> |
 
 <a name="getTransactionResult"></a>
 
@@ -689,12 +689,12 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| id | <code>transaction_id_type</code> | 
-| trx | <code>variant</code> | 
-| block_time | <code>block_timestamp_type</code> | 
-| block_num | <code>uint32</code> | 
-| last_irreversible_block | <code>uint32</code> | 
-| traces | <code>Array.&lt;variant&gt;</code> | 
+| id | <code>transaction_id_type</code> |
+| trx | <code>variant</code> |
+| block_time | <code>block_timestamp_type</code> |
+| block_num | <code>uint32</code> |
+| last_irreversible_block | <code>uint32</code> |
+| traces | <code>Array.&lt;variant&gt;</code> |
 
 <a name="getKeyAccountsResult"></a>
 
@@ -704,7 +704,7 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_names | <code>Array.&lt;account_name&gt;</code> | 
+| account_names | <code>Array.&lt;account_name&gt;</code> |
 
 <a name="getControlledAccountsResult"></a>
 
@@ -714,5 +714,4 @@ eos.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| controlled_accounts | <code>Array.&lt;account_name&gt;</code> | 
-
+| controlled_accounts | <code>Array.&lt;account_name&gt;</code> |

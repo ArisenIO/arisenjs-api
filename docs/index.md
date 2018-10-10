@@ -49,7 +49,7 @@ Consult the blockchain and gather information for use in a new signed transactio
 
 **Example**  
 ```js
-eos.createTransaction(60, (error, headers) => {})
+rsn.createTransaction(60, (error, headers) => {})
 ```
 <a name="processArgs"></a>
 
@@ -106,4 +106,3 @@ Normalized object containing arguments, and
 | options | <code>object</code> | non-null or non-undefined return value from invocation of   optionsFormatter(optionsParam). |
 | callback | <code>function</code> | chained to optional callback provided in args.  Resolves   or rejects returnPromise. |
 | returnPromise | <code>Promise</code> | promise is returned when no callback is provided in   args[args.length - 1].  Undefined when a callback is provided. |
-

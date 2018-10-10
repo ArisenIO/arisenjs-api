@@ -96,7 +96,7 @@ function fetchMethod (methodName, url, definition, config) {
     .catch(error => {
       let message = ''
       try {
-        // nodeos format (fail safe)
+        // aOS format (fail safe)
         message = JSON.parse(error.message).error.details[0]
       } catch(e2) {}
 
