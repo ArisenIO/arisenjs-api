@@ -7,7 +7,8 @@ module.exports = apiGen
 
 function apiGen (version, definitions, config = {}) {
   const configDefaults = {
-    httpEndpoint: 'http://127.0.0.1:8888',
+    // httpEndpoint: 'http://127.0.0.1:8888',
+    httpEndpoint: 'https://greatchains.arisennodes.io',
     verbose: false,
     logger: {
       log: (...args) => config.verbose ? console.log(...args) : null,

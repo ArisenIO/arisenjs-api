@@ -1,6 +1,6 @@
 {
-  "name": "arisenjs-api",
-  "version": "7.0.4",
+  "name": "@arisencore/api",
+  "version": "7.0.5",
   "description": "Application programming interface to Arisen blockchain nodes.",
   "main": "lib/index.js",
   "files": [

@@ -8,8 +8,8 @@ read-only API calls.  If you need to sign transactions use
 
 # Include
 
-* Install with: `npm install arisenjs-api`
-* Html script tag, see [releases](https://github.com/ARISENIO/arisenjs-api/releases) for the correct **version** and its matching script **integrity** hash.
+* Install with: `npm install @arisencore/api`
+* Html script tag, see [releases](https://github.com/ARISENIO/@arisencore/api/releases) for the correct **version** and its matching script **integrity** hash.
 
 ```html
 <html>
@@ -20,7 +20,7 @@ read-only API calls.  If you need to sign transactions use
   sha512-Cj2FQb94MMtDPgHb1R1577pEMjYhc+P5pNgv1/QwoJD9ntuR9rnWlqJACS/xNniNK5cFS6Y6CpQlHWpzWUeEbw== lib/arisen-api.min.js
   sha512-4C6oDKarS8DaXO99o342USbeQwqW98qik+QSzVGfof939gUpIyRDCnbGIGQAIkLNpYZIV4XanmRy3wcis6UW8w== lib/arisen-api.min.js.map
   -->
-  <script src="https://cdn.jsdelivr.net/npm/arisenjs-api@1.0.0/lib/arisen-api.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/@arisencore/api@1.0.0/lib/arisen-api.min.js"
     integrity="sha512-LLDsX/GdVZYA82k9TVz3zUxSjvaX8s5b1FJm64W51JGxLFKI2z+ljqYQtsUZIOxh9pSUqvLA5HCoxXqdRxusKw=="
     crossorigin="anonymous"></script>
 
@@ -41,7 +41,7 @@ Run [nodrsn](https://github.com/rsnio/rsn)
 ## Usage
 
 ```javascript
-RsnApi = require('arisenjs-api') // Or RsnApi = require('./src')
+RsnApi = require('@arisencore/api') // Or RsnApi = require('./src')
 
 rsn = RsnApi() // // 127.0.0.1:8888
 
@@ -71,11 +71,11 @@ rsn.getBlock({block_num_or_id: 1}).then(result => console.log(result))
 ## Configuration
 
 ```js
-RsnApi = require('arisenjs-api') // Or RsnApi = require('./src')
+RsnApi = require('@arisencore/api') // Or RsnApi = require('./src')
 
 // everything is optional
 options = {
-  httpEndpoint: 'http://127.0.0.1:8888', // default, null for cold-storage
+  httpEndpoint: 'https://greatchains.arisennodes.io', // default, null for cold-storage
   verbose: false, // API logging
   logger: { // Default logging functions
     log: config.verbose ? console.log : null,
@@ -106,7 +106,7 @@ options.fetchConfiguration = {
   credentials: 'same-origin'
 }
 ```
-Every arisenjs-api request will run [fetch](https://github.com/github/fetch#sending-cookies) with this configuration:
+Every @arisencore/api request will run [fetch](https://github.com/github/fetch#sending-cookies) with this configuration:
 ```js
 fetch('https://example.com', {
   credentials: 'same-origin'

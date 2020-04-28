@@ -60,7 +60,7 @@
     * [.getRawCodeAndAbi(account_name)](#rsn.getRawCodeAndAbi) ⇒ [<code>getRawCodeAndAbiResult</code>](#getRawCodeAndAbiResult)
     * [.abiJsonToBin(code, action, args)](#rsn.abiJsonToBin) ⇒ [<code>abiJsonToBinResult</code>](#abiJsonToBinResult)
     * [.abiBinToJson(code, action, binargs)](#rsn.abiBinToJson) ⇒ [<code>abiBinToJsonResult</code>](#abiBinToJsonResult)
-    * [.getRequiredKeys(transaction, available_keys)](#rsn.getRequiredKeys) ⇒ <code>Set.&lt;public_key&gt;</code>
+    * [.getRequiredKeys(transaction, available_keys)](#rsn.getRequiredKeys) ⇒ <code>Set.&lt;public\_key&gt;</code>
     * [.getBlock(block_num_or_id)](#rsn.getBlock) ⇒ <code>variant</code>
     * [.getBlockHeaderState(block_num_or_id)](#rsn.getBlockHeaderState) ⇒ <code>string</code>
     * [.getTableRows([json], code, scope, table, table_key, [lower_bound], [upper_bound], [limit], key_type, index_position)](#rsn.getTableRows) ⇒ [<code>getTableRowsResult</code>](#getTableRowsResult)
@@ -71,7 +71,7 @@
     * [.getScheduledTransactions([json], lower_bound, [limit])](#rsn.getScheduledTransactions) ⇒ [<code>getScheduledTransactionsResult</code>](#getScheduledTransactionsResult)
     * [.pushBlock(block)](#rsn.pushBlock)
     * [.pushTransaction(signed_transaction)](#rsn.pushTransaction) ⇒ [<code>pushTransactionResult</code>](#pushTransactionResult)
-    * [.pushTransactions(signed_transaction)](#rsn.pushTransactions) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
+    * [.pushTransactions(signed_transaction)](#rsn.pushTransactions) ⇒ <code>vector.&lt;push\_transaction.results&gt;</code>
     * [.getActions(account_name, [pos], [offset])](#rsn.getActions) ⇒ [<code>getActionsResult</code>](#getActionsResult)
     * [.getTransaction(id, [block_num_hint])](#rsn.getTransaction) ⇒ [<code>getTransactionResult</code>](#getTransactionResult)
     * [.getKeyAccounts(public_key)](#rsn.getKeyAccounts) ⇒ [<code>getKeyAccountsResult</code>](#getKeyAccountsResult)
@@ -100,7 +100,7 @@ Fetch a blockchain account
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> |
+| account_name | <code>name</code> | 
 
 **Example**  
 ```js
@@ -119,8 +119,8 @@ Fetch smart contract code
 
 | Param | Type | Default |
 | --- | --- | --- |
-| account_name | <code>name</code> |  |
-| [code_as_wasm] | <code>bool</code> | <code>false</code> |
+| account_name | <code>name</code> |  | 
+| [code_as_wasm] | <code>bool</code> | <code>false</code> | 
 
 **Example**  
 ```js
@@ -137,7 +137,7 @@ rsn.getCode(account_name, code_as_wasm)
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> |
+| account_name | <code>name</code> | 
 
 **Example**  
 ```js
@@ -154,7 +154,7 @@ rsn.getCodeHash(account_name)
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> |
+| account_name | <code>name</code> | 
 
 **Example**  
 ```js
@@ -171,7 +171,7 @@ rsn.getAbi(account_name)
 
 | Param | Type |
 | --- | --- |
-| account_name | <code>name</code> |
+| account_name | <code>name</code> | 
 
 **Example**  
 ```js
@@ -190,9 +190,9 @@ Manually serialize json into binary hex.  The binayargs is usually stored in Act
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> |
-| action | <code>name</code> |
-| args | [<code>bytes</code>](#bytes) |
+| code | <code>name</code> | 
+| action | <code>name</code> | 
+| args | [<code>bytes</code>](#bytes) | 
 
 **Example**  
 ```js
@@ -211,9 +211,9 @@ Convert bin hex back into Abi json definition.
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> |
-| action | <code>name</code> |
-| binargs | [<code>bytes</code>](#bytes) |
+| code | <code>name</code> | 
+| action | <code>name</code> | 
+| binargs | [<code>bytes</code>](#bytes) | 
 
 **Example**  
 ```js
@@ -225,13 +225,13 @@ rsn.abiBinToJson(code, action, binargs)
 ```
 <a name="rsn.getRequiredKeys"></a>
 
-### rsn.getRequiredKeys(transaction, available_keys) ⇒ <code>Set.&lt;public_key&gt;</code>
+### rsn.getRequiredKeys(transaction, available_keys) ⇒ <code>Set.&lt;public\_key&gt;</code>
 **Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| transaction | <code>transaction</code> |
-| available_keys | <code>set.&lt;public_key&gt;</code> |
+| transaction | <code>transaction</code> | 
+| available_keys | <code>set.&lt;public\_key&gt;</code> | 
 
 **Example**  
 ```js
@@ -250,7 +250,7 @@ Fetch a block from the blockchain.
 
 | Param | Type |
 | --- | --- |
-| block_num_or_id | <code>string</code> |
+| block_num_or_id | <code>string</code> | 
 
 **Example**  
 ```js
@@ -269,7 +269,7 @@ Fetch the minimum state necessary to validate transaction headers.
 
 | Param | Type |
 | --- | --- |
-| block_num_or_id | <code>string</code> |
+| block_num_or_id | <code>string</code> | 
 
 **Example**  
 ```js
@@ -314,9 +314,9 @@ rsn.getTableRows(json, code, scope, table, table_key, lower_bound, upper_bound, 
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> |
-| account | <code>name</code> |
-| symbol | <code>optional.&lt;string&gt;</code> |
+| code | <code>name</code> | 
+| account | <code>name</code> | 
+| symbol | <code>optional.&lt;string&gt;</code> | 
 
 **Example**  
 ```js
@@ -333,8 +333,8 @@ rsn.getCurrencyBalance(code, account, symbol)
 
 | Param | Type |
 | --- | --- |
-| code | <code>name</code> |
-| symbol | <code>string</code> |
+| code | <code>name</code> | 
+| symbol | <code>string</code> | 
 
 **Example**  
 ```js
@@ -353,9 +353,9 @@ Fetch smart contract data from producer.
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [json] | <code>bool</code> | <code>false</code> |
-| lower_bound | <code>string</code> |  |
-| [limit] | <code>uint32</code> | <code>50</code> |
+| [json] | <code>bool</code> | <code>false</code> | 
+| lower_bound | <code>string</code> |  | 
+| [limit] | <code>uint32</code> | <code>50</code> | 
 
 **Example**  
 ```js
@@ -405,7 +405,7 @@ Append a block to the chain database.
 
 | Param | Type |
 | --- | --- |
-| block | <code>signed_block</code> |
+| block | <code>signed\_block</code> | 
 
 **Example**  
 ```js
@@ -424,7 +424,7 @@ Attempts to push the transaction into the pending queue.
 
 | Param | Type |
 | --- | --- |
-| signed_transaction | <code>signed_transaction</code> |
+| signed_transaction | <code>signed\_transaction</code> | 
 
 **Example**  
 ```js
@@ -436,14 +436,14 @@ rsn.pushTransaction(signed_transaction)
 ```
 <a name="rsn.pushTransactions"></a>
 
-### rsn.pushTransactions(signed_transaction) ⇒ <code>vector.&lt;push_transaction.results&gt;</code>
+### rsn.pushTransactions(signed_transaction) ⇒ <code>vector.&lt;push\_transaction.results&gt;</code>
 Attempts to push transactions into the pending queue.
 
 **Kind**: static method of [<code>rsn</code>](#rsn)  
 
 | Param | Type |
 | --- | --- |
-| signed_transaction | <code>signed_transaction</code> |
+| signed_transaction | <code>signed\_transaction</code> | 
 
 **Example**  
 ```js
@@ -460,7 +460,7 @@ rsn.pushTransactions(signed_transaction)
 
 | Param | Type | Description |
 | --- | --- | --- |
-| account_name | <code>account_name</code> |  |
+| account_name | <code>account\_name</code> |  |
 | [pos] | <code>int32</code> | An absolute sequence positon -1 is the end/last action |
 | [offset] | <code>int32</code> | The number of actions relative to pos, negative numbers return [pos-offset,pos), positive numbers return [pos,pos+offset) |
 
@@ -481,7 +481,7 @@ Retrieve a transaction from the blockchain.
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| id | <code>transaction_id_type</code> |  |  |
+| id | <code>transaction\_id\_type</code> |  |  |
 | [block_num_hint] | <code>uint32</code> | <code>0</code> | A non-zero block number allows shorter transaction IDs (8 hex, 4 bytes) |
 
 **Example**  
@@ -499,7 +499,7 @@ rsn.getTransaction(id, block_num_hint)
 
 | Param | Type |
 | --- | --- |
-| public_key | <code>public_key_type</code> |
+| public_key | <code>public\_key\_type</code> | 
 
 **Example**  
 ```js
@@ -516,7 +516,7 @@ rsn.getKeyAccounts(public_key)
 
 | Param | Type |
 | --- | --- |
-| controlling_account | <code>account_name</code> |
+| controlling_account | <code>account\_name</code> | 
 
 **Example**  
 ```js
@@ -538,11 +538,11 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> |
-| wast | <code>string</code> |
-| wasm | <code>string</code> |
-| code_hash | <code>sha256</code> |
-| abi | <code>optional.&lt;abi_def&gt;</code> |
+| account_name | <code>name</code> | 
+| wast | <code>string</code> | 
+| wasm | <code>string</code> | 
+| code_hash | <code>sha256</code> | 
+| abi | <code>optional.&lt;abi\_def&gt;</code> | 
 
 <a name="getCodeHashResult"></a>
 
@@ -552,8 +552,8 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> |
-| code_hash | <code>sha256</code> |
+| account_name | <code>name</code> | 
+| code_hash | <code>sha256</code> | 
 
 <a name="getAbiResult"></a>
 
@@ -563,8 +563,8 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> |
-| [abi] | <code>abi_def</code> |
+| account_name | <code>name</code> | 
+| [abi] | <code>abi\_def</code> | 
 
 <a name="getRawCodeAndAbiResult"></a>
 
@@ -574,9 +574,9 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_name | <code>name</code> |
-| wasm | [<code>bytes</code>](#bytes) |
-| [abi] | <code>abi_def</code> |
+| account_name | <code>name</code> | 
+| wasm | [<code>bytes</code>](#bytes) | 
+| [abi] | <code>abi\_def</code> | 
 
 <a name="abiJsonToBinResult"></a>
 
@@ -586,7 +586,7 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| binargs | [<code>bytes</code>](#bytes) |
+| binargs | [<code>bytes</code>](#bytes) | 
 
 <a name="abiBinToJsonResult"></a>
 
@@ -596,7 +596,7 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| args | [<code>bytes</code>](#bytes) |
+| args | [<code>bytes</code>](#bytes) | 
 
 <a name="getTableRowsResult"></a>
 
@@ -617,9 +617,9 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| supply | <code>asset</code> |
-| max_supply | <code>asset</code> |
-| issuer | <code>account_name</code> |
+| supply | <code>asset</code> | 
+| max_supply | <code>asset</code> | 
+| issuer | <code>account\_name</code> | 
 
 <a name="getProducersResult"></a>
 
@@ -641,7 +641,7 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| vector | <code>proposed</code> |
+| vector | <code>proposed</code> | 
 
 <a name="getScheduledTransactionsResult"></a>
 
@@ -666,8 +666,8 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| transaction_id | <code>fixed_bytes32</code> |
-| processed | [<code>bytes</code>](#bytes) |
+| transaction_id | <code>fixed\_bytes32</code> | 
+| processed | [<code>bytes</code>](#bytes) | 
 
 <a name="getActionsResult"></a>
 
@@ -677,9 +677,9 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| actions | <code>Array.&lt;ordered_action_result&gt;</code> |
-| last_irreversible_block | <code>uint32</code> |
-| [time_limit_exceeded_error] | <code>bool</code> |
+| actions | <code>Array.&lt;ordered\_action\_result&gt;</code> | 
+| last_irreversible_block | <code>uint32</code> | 
+| [time_limit_exceeded_error] | <code>bool</code> | 
 
 <a name="getTransactionResult"></a>
 
@@ -689,12 +689,12 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| id | <code>transaction_id_type</code> |
-| trx | <code>variant</code> |
-| block_time | <code>block_timestamp_type</code> |
-| block_num | <code>uint32</code> |
-| last_irreversible_block | <code>uint32</code> |
-| traces | <code>Array.&lt;variant&gt;</code> |
+| id | <code>transaction\_id\_type</code> | 
+| trx | <code>variant</code> | 
+| block_time | <code>block\_timestamp\_type</code> | 
+| block_num | <code>uint32</code> | 
+| last_irreversible_block | <code>uint32</code> | 
+| traces | <code>Array.&lt;variant&gt;</code> | 
 
 <a name="getKeyAccountsResult"></a>
 
@@ -704,7 +704,7 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| account_names | <code>Array.&lt;account_name&gt;</code> |
+| account_names | <code>Array.&lt;account\_name&gt;</code> | 
 
 <a name="getControlledAccountsResult"></a>
 
@@ -714,4 +714,5 @@ rsn.getControlledAccounts(controlling_account)
 
 | Name | Type |
 | --- | --- |
-| controlled_accounts | <code>Array.&lt;account_name&gt;</code> |
+| controlled_accounts | <code>Array.&lt;account\_name&gt;</code> | 
+
